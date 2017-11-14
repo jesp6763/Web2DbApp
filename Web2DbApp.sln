@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.Ui", "Web2DbApp\W
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.Entities", "Web2DbApp.Entities\Web2DbApp.Entities.csproj", "{3BDB97EE-747F-4007-B3F4-35F23B51225F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.Services", "Web2DbApp.Services\Web2DbApp.Services.csproj", "{7EA99A7B-7D98-426F-8D7E-7FB0E0834D91}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.DataAccess", "Web2DbApp.DataAccess\Web2DbApp.DataAccess.csproj", "{691122C1-CF12-42D2-B23C-D500B77724D4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{3BDB97EE-747F-4007-B3F4-35F23B51225F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3BDB97EE-747F-4007-B3F4-35F23B51225F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3BDB97EE-747F-4007-B3F4-35F23B51225F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EA99A7B-7D98-426F-8D7E-7FB0E0834D91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EA99A7B-7D98-426F-8D7E-7FB0E0834D91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EA99A7B-7D98-426F-8D7E-7FB0E0834D91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EA99A7B-7D98-426F-8D7E-7FB0E0834D91}.Release|Any CPU.Build.0 = Release|Any CPU
+		{691122C1-CF12-42D2-B23C-D500B77724D4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{691122C1-CF12-42D2-B23C-D500B77724D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{691122C1-CF12-42D2-B23C-D500B77724D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{691122C1-CF12-42D2-B23C-D500B77724D4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
