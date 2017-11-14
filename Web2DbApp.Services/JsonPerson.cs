@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using Web2DbApp.Entities;
+﻿using Web2DbApp.Entities;
 
 namespace Web2DbApp.Services
 {
