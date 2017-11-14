@@ -57,5 +57,15 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Web2DbApp.Entities\Web2DbApp.Entities.csproj">
+      <Project>{3bdb97ee-747f-4007-b3f4-35f23b51225f}</Project>
+      <Name>Web2DbApp.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Web2DbApp.Services\Web2DbApp.Services.csproj">
+      <Project>{7ea99a7b-7d98-426f-8d7e-7fb0e0834d91}</Project>
+      <Name>Web2DbApp.Services</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
