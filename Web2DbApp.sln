@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26730.15
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp", "Web2DbApp\Web2DbApp.csproj", "{849A81C9-FEB5-443E-A28F-B5016AFF6E0C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.Ui", "Web2DbApp\Web2DbApp.Ui.csproj", "{849A81C9-FEB5-443E-A28F-B5016AFF6E0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
