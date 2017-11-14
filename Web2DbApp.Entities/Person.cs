@@ -106,5 +106,12 @@ namespace Web2DbApp.Entities
             set => titleOfCourtesy = value;
         }
         #endregion
+
+        #region Methods
+        public override string ToString()
+        {
+            return string.Empty;
+        }
+        #endregion
     }
 }
