@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using Web2DbApp.Entities;
+using Web2DbApp.Services;
 
 namespace Web2DbApp
 {
@@ -10,8 +11,8 @@ namespace Web2DbApp
     {
         static void Main(string[] args)
         {
-            List<Person> persons = new List<Person>();
-            PrintAll(persons);
+            MockDataProvider mockDataProvider = new MockDataProvider();
+            PrintAll(mockDataProvider.GetPeople(10));
 
             Console.ReadKey();
         }
