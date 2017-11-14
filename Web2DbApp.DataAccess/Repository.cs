@@ -17,7 +17,7 @@ namespace Web2DbApp.DataAccess
         }
 
         /// <summary>
-        /// Gets all person from database
+        /// Gets all people from dbtable
         /// </summary>
         /// <returns>A list of persons found</returns>
         public List<Person> GetAll()
@@ -26,7 +26,7 @@ namespace Web2DbApp.DataAccess
         }
 
         /// <summary>
-        /// Saves a list of persons to the database
+        /// Saves a list of people to the dbtable
         /// </summary>
         /// <param name="persons"></param>
         public void Save(List<Person> persons)
