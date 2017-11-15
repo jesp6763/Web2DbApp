@@ -21,10 +21,7 @@ namespace Web2DbApp
         {
             foreach(Person person in persons)
             {
-                Console.WriteLine("***************************************************");
-                Console.WriteLine($"First name: {person.FirstName}");
-                Console.WriteLine($"Last name: {person.LastName}");
-                Console.WriteLine($"Title of courtesy: {person.TitleOfCourtesy}");
+                Console.WriteLine($"{person.TitleOfCourtesy}. {person.FirstName} {person.LastName}");
             }
         }
     }
