@@ -22,7 +22,7 @@ namespace Web2DbApp.Services
         {
             #region Setup
             List<Person> persons = new List<Person>();
-            url = $"https://randomuser.me/api/?results={amount}&inc=name";
+            url = $"https://randomuser.me/api/?results={amount}&inc=name&nat=us";
             #endregion
 
             #region Get json
