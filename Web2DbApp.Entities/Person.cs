@@ -79,7 +79,7 @@ namespace Web2DbApp.Entities
             get => lastName;
             set
             {
-                if(!string.IsNullOrWhiteSpace(value) && Regex.IsMatch(value, "^[ A-Za-zæøåÆØÅ]+$"))
+                if(!string.IsNullOrWhiteSpace(value) && Regex.IsMatch(value, "^[ -A-Za-zæøåÆØÅ]+$"))
                 {
                     if(value.Length <= 20)
                     {

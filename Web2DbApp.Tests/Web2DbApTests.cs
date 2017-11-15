@@ -44,7 +44,26 @@ namespace Web2DbApp.Tests
         [TestMethod()]
         public void TestValidationCodeInEntity()
         {
-            
+            // Arrange
+            Person person;
+
+            // Act
+            person = new Person("John", "smith-corsy", "Mr");
+
+            // Assert
+        }
+
+        [TestMethod()]
+        [ExpectedException(typeof(ArgumentException))]
+        public void TestValidationCodeInEntity2()
+        {
+            // Arrange
+            Person person;
+
+            // Act
+            person = new Person("John", "smith``^^**corsy", "Mr");
+
+            // Assert
         }
 
         [TestMethod()]
