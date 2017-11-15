@@ -58,6 +58,10 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Web2DbApp.DataAccess\Web2DbApp.DataAccess.csproj">
+      <Project>{691122c1-cf12-42d2-b23c-d500b77724d4}</Project>
+      <Name>Web2DbApp.DataAccess</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Web2DbApp.Entities\Web2DbApp.Entities.csproj">
       <Project>{3bdb97ee-747f-4007-b3f4-35f23b51225f}</Project>
       <Name>Web2DbApp.Entities</Name>
@@ -66,6 +70,9 @@
       <Project>{7ea99a7b-7d98-426f-8d7e-7fb0e0834d91}</Project>
       <Name>Web2DbApp.Services</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
