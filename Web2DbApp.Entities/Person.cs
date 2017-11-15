@@ -51,7 +51,7 @@ namespace Web2DbApp.Entities
             get => firstName;
             set
             {
-                if(!string.IsNullOrWhiteSpace(value) && Regex.IsMatch(value, "^[ A-Za-z]+$"))
+                if(!string.IsNullOrWhiteSpace(value) && Regex.IsMatch(value, "^[ A-Za-zæøåÆØÅ]+$"))
                 {
                     if(value.Length <= 10)
                     {
