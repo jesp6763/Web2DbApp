@@ -4,12 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Data;
 using System.Data.SqlClient;
+using System.Diagnostics;
 
 namespace Web2DbApp.DataAccess
 {
     public class Executor
     {
-        private const string connectionString = "Integrated Security=true;Initial Catalog=Web2DbApp;server=(local)\\MSSQLLocalDB";
+        private const string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Web2DbApp;Integrated Security=false;";
 
         public Executor()
         {
@@ -25,11 +26,12 @@ namespace Web2DbApp.DataAccess
         {
             using(SqlConnection connection = new SqlConnection(connectionString))
             {
-                connection.Open();
                 using(SqlCommand command = new SqlCommand(procedureName, connection) { CommandType = CommandType.StoredProcedure })
                 {
-                    command.Parameters.Add("sqlQuery", SqlDbType.Text).Value = sqlQuery;
+                    command.Parameters.Add("@sqlQuery", SqlDbType.NVarChar).Value = sqlQuery;
+                    connection.Open();
                     command.ExecuteNonQuery();
+                    Debug.WriteLine("Executed sql");
                 }
             }
         }

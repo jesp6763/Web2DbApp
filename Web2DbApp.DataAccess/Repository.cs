@@ -45,10 +45,19 @@ namespace Web2DbApp.DataAccess
         /// <summary>
         /// Saves a list of people to the dbtable
         /// </summary>
-        /// <param name="persons"></param>
+        /// <param name="persons">List of people to save to dbtable</param>
         public void Save(List<Person> persons)
         {
+            StringBuilder sb = new StringBuilder();
+            foreach(Person person in persons)
+            {
+                sb.Append($"('{person.FirstName}', '{person.LastName}', '{person.TitleOfCourtesy}'), ");
+            }
 
+            string sqlQuery = $"INSERT INTO dbo.Persons (Firstname, Lastname, Title) VALUES {sb.ToString()}";
+            sqlQuery = sqlQuery.TrimEnd(' ');
+            sqlQuery = sqlQuery.TrimEnd(',');
+            executor.Execute("dbo.PersonTableCreator", sqlQuery);
         }
     }
 }
