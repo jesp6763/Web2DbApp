@@ -11,6 +11,9 @@ namespace Web2DbApp.Services
 {
     public class MockDataProvider
     {
+        /// <summary>
+        /// Url to request json from
+        /// </summary>
         private string url;
 
         /// <summary>

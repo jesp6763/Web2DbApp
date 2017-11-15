@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.Services", "Web2D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.DataAccess", "Web2DbApp.DataAccess\Web2DbApp.DataAccess.csproj", "{691122C1-CF12-42D2-B23C-D500B77724D4}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Web2DbApp.Tests", "Web2DbApp.Tests\Web2DbApp.Tests.csproj", "{BD2F5659-8756-450B-8183-BDFD24316817}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{691122C1-CF12-42D2-B23C-D500B77724D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{691122C1-CF12-42D2-B23C-D500B77724D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{691122C1-CF12-42D2-B23C-D500B77724D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD2F5659-8756-450B-8183-BDFD24316817}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD2F5659-8756-450B-8183-BDFD24316817}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD2F5659-8756-450B-8183-BDFD24316817}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD2F5659-8756-450B-8183-BDFD24316817}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

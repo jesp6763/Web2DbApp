@@ -5,10 +5,23 @@ namespace Web2DbApp.Services
 {
     class JsonPerson
     {
+        /// <summary>
+        /// Gets or sets the firstname
+        /// </summary>
         public string First { get; set; }
+        /// <summary>
+        /// Gets or sets the lastname
+        /// </summary>
         public string Last { get; set; }
+        /// <summary>
+        /// Gets or sets the title of courtesy
+        /// </summary>
         public string Title { get; set; }
 
+        /// <summary>
+        /// Casts JsonPerson to a Person
+        /// </summary>
+        /// <param name="jPerson"></param>
         public static explicit operator Person(JsonPerson jPerson)
         {
             Person person = new Person(jPerson.First, jPerson.Last, jPerson.Title);

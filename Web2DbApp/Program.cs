@@ -12,11 +12,11 @@ namespace Web2DbApp
         {
             MockDataProvider mockDataProvider = new MockDataProvider();
             List<Person> people = mockDataProvider.GetPeople(10);
-            PrintAll(people);
-
             Repository repository = new Repository();
             repository.Save(people);
             Console.WriteLine("Executed");
+
+            PrintAll(repository.GetAll());
 
             Console.ReadKey();
         }

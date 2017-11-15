@@ -12,6 +12,9 @@ namespace Web2DbApp.DataAccess
     {
         private const string connectionString = "Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=Web2DbApp;Integrated Security=false;";
 
+        /// <summary>
+        /// Initializes a new instance of the Executor class
+        /// </summary>
         public Executor()
         {
 

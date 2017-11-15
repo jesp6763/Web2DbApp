@@ -14,6 +14,9 @@ namespace Web2DbApp.DataAccess
         /// </summary>
         private Executor executor;
 
+        /// <summary>
+        /// Initializes a new instance of the Repository class
+        /// </summary>
         public Repository()
         {
             executor = new Executor();
