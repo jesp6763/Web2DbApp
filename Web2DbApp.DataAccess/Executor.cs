@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Data;
+﻿using System.Data;
 using System.Data.SqlClient;
 using System.Diagnostics;
 
@@ -34,7 +30,10 @@ namespace Web2DbApp.DataAccess
                     command.Parameters.Add("@sqlQuery", SqlDbType.NVarChar).Value = sqlQuery;
                     connection.Open();
                     command.ExecuteNonQuery();
-                    Debug.WriteLine("Executed sql");
+
+                    #if DEBUG
+                        Debug.WriteLine("Executed sql");
+                    #endif
                 }
             }
         }
